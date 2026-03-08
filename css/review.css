@@ -83,7 +83,6 @@ reviewreview
 ========================== */
 .section__review {
    background-color: var(--primary-white);
-   /* padding: 40px 20px; */
    padding-top: 40px;
    overflow: hidden;
 }
@@ -151,7 +150,6 @@ reviewreview
 .review__btnReviewIcon {
    width: 60px;
    height: 60px;
-   /* margin-right: 20px; */
 }
 
 .review1 {
@@ -220,6 +218,7 @@ reviewreview
    text-align: left;
    margin-left: 10px;
 }
+
 .review__time {
    color: var(--primary-black);
    font-size: 1.2rem;

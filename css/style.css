@@ -385,14 +385,14 @@ map
 .map__description {
    width: 100%; 
    max-width: 317px;
-   height: 134px;
    border-radius: 10px;
    border: solid 2px var(--primary-lightGray);
    margin: 0 auto;
    margin-top: 15px;
+}
+.mapIconInner{
    display: flex;
 }
-
 .map__description--under {
    width: 100%; 
    max-width: 317px;
@@ -408,7 +408,8 @@ map
 .mapBtnWrap {
    display: flex;
    gap: 5px;
-   padding: 20px 100px 0 0;
+   justify-content: center;
+   padding: 5px 0;
 }
 
 .reviewLook,.waitTimelook {
@@ -430,6 +431,7 @@ map
    border-radius: 10px;
    margin-top: 13px;
    margin-left: 10px;
+   object-fit: cover;
 }
 
 .mapImg__robot {
