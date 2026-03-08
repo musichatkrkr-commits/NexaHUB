@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+/* =======================
+common
+========================== */
+:root {
+   --primary-lightGray:#d9d9d9;
+   --primary-green:#1A9B44;
+   --primary-black:#333a3a;
+   --primary-white:#fdfdfd;
+   --primary-lightgreen: #DAF8D3;
+
+   --contentWidth: 91.4%;
+   --contentpadding: 4.2%;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: 
+      'noto Sans JP',
+      Arial, 
+      sans-serif;
+   font-style: normal;
+   color: var(--primary-black,#333a3a);
+   background-color: var(--primary-white,#fdfdfd);
+   line-height: 1.5;
+   /* font-size: 16px; */
+}
+
+.header {
+   width: 351px;
+   height: 80px;
+   display: flex;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--primary-lightgreen);
+}
+
+.NexaHUBicon {
+   width: 150px;
+   height: 26px;
+}
+
+/* ページ全体は固定 */
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+  background:#eaeaea;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* スマホ枠 */
+.phone{
+   width:375px;
+   height:812px; /* 好きなサイズ */
+   background:#111;
+   border-radius:40px;
+   padding:12px;
+   box-shadow:0 20px 40px rgba(0,0,0,.2);
+   box-sizing: border-box;
+}
+
+/* 画面部分だけスクロール */
+.screen{
+   width:100%;
+   height:100%;
+   background:#fff;
+   border-radius:28px;
+   overflow-y:auto;
+  -webkit-overflow-scrolling:touch; /* iOS風 */
+   overflow-x: hidden;
+}
+
+   /* =======================
+reviewreview
+========================== */
+.section__review {
+   background-color: var(--primary-white);
+   /* padding: 40px 20px; */
+   padding-top: 40px;
+   overflow: hidden;
+}
+
+.title__block {
+   display: flex;
+   justify-content: center;
+}
+
+.review--bk {
+   font-size: 2.4rem;
+   font-weight: 700;
+   color: var(--primary-black);
+}
+
+.review--ja {
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: var(--primary-black);
+   margin-left: 10px;
+}
+
+.review__btnTxt {
+   font-size: 2.4rem;
+   font-weight: 700;
+   color: var(--primary-black);
+}
+
+.review__btn {
+   width: 100%; 
+   max-width: 317px;
+   height: 67px;
+   background-color: var(--primary-lightGray);
+   border-radius: 10px;
+   display: flex;
+   margin: 0 auto;
+   margin-top: 10px;
+   box-shadow: 4px 4px 6px rgb(144, 144, 144);
+   align-items: center;
+   justify-content: center;
+   /* gap: -10px; */
+   position: relative;
+}
+
+.finger__bk {
+   display: block;
+   margin: 0 auto;
+   position: relative;
+   top: -10px;
+   margin-bottom: 40px;
+   animation: SNSblock 2s ease-out infinite;
+   opacity: 1;
+}
+
+@keyframes finger__bk {
+   0%, 40%, 60%, 80% {
+   transform: scale(2.0);
+}
+
+50%, 70% {
+   transform: scale(0.95);
+   }
+}
+
+.review__btnReviewIcon {
+   width: 60px;
+   height: 60px;
+   /* margin-right: 20px; */
+}
+
+.review1 {
+   width: 100%; 
+   max-width: 317px;
+   border-radius: 10px;
+   border: solid 2px var(--primary-lightGray);
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+.profile__box {
+   font-size: 1.2rem;
+   font-weight: 400;
+   text-align: left;
+   margin: 10px ;
+   display: flex;
+   gap: 10px;
+}
+
+.profile__txt {
+   display: block;
+   margin: 5px 0 10px 0;
+}
+
+.heart__box {
+   text-align: left;
+   margin-left: 15px;
+   font-size: 1.6rem;
+   font-weight: 400;
+   display: flex;
+   color: var(--primary-black);
+}
+
+.evaluation {
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-right: 10px;
+}
+
+.review__title {
+   color: var(--primary-black);
+   font-weight: 700;
+   font-size: 1.6rem;
+   margin: 20px 0  5px 12px;
+   text-align: left;
+}
+
+.review__txt {
+   margin: 0 12px 20px 12px;
+   font-size: 1.2rem;
+   color: var(--primary-black);
+   text-align: left;
+}
+
+.reference {
+   display: flex;
+   margin: 20px 0 15px 10px;
+   gap: 5px;
+}
+
+.visitedTime {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+   font-weight: 400;
+   text-align: left;
+   margin-left: 10px;
+}
+.review__time {
+   color: var(--primary-black);
+   font-size: 1.2rem;
+   font-weight: 400;
+   text-align: left;
+}
+
+.reference__txt {
+   color: var(--primary-black);
+   font-size: 1.2rem;
+   font-weight: 400;
+}
+
+.yes {
+   background-color: #1A9B44;
+   padding: 0 10px;
+   color: var(--primary-white);
+   font-size: 1.2rem;
+   font-weight: 700;
+   border-radius: 7px;
+}
+
+.count {
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--primary-black);
+}
+.review2 {
+   width: 100%; 
+   max-width: 317px;
+   border-radius: 10px;
+   border: solid 2px var(--primary-lightGray);
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+.review3 {
+   width: 100%; 
+   max-width: 317px;
+   border-radius: 10px;
+   border: solid 2px var(--primary-lightGray);
+   margin: 0 auto;
+   margin-top: 10px;
+   
+}
+
+.more {
+   font-size: 1rem;
+   font-weight: 700;
+}
+/* =======================
+NexaHUBinformation
+========================== */
+.section__NexaHUBinformation {
+   background-color: var(--primary-lightgreen);
+   text-align: left;
+   justify-content: center;
+   padding-top: 40px;
+}
+
+.NexaHUBinformation__title {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 500;
+   margin-left: 40px;
+}
+
+.NexaHUBinformation__block {
+   margin-bottom: 20px;
+}
+
+.NexaHUBinformation__subTitle {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 400;
+   margin-left: 5px;
+}
+
+.NexaHUBinformation__txt {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+   font-weight: 400;
+   margin-left: 40px;
+}
+
+.NexaHUBinformation__txt1 {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+   font-weight: 400;
+   margin-left: 40px;
+}
+
+.NexaHUBinformation__txtSns {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 500;
+   margin-left: 40px;
+}
+
+.SNSblock {
+   display: flex;
+   justify-content: left;
+   gap: 10px;
+   animation: SNSblock 2s ease-out infinite;
+   opacity: 1;
+      margin-left: 40px;
+}
+
+@keyframes SNSblock {
+   0%, 40%, 60%, 80% {
+   transform: scale(1.0);
+}
+
+50%, 70% {
+   transform: scale(0.95);
+   }
+}
+
+.sns {
+   width: 20px;
+   height: 20px;
+   margin: 10px 0 40px;
+}
+
+.copyrightArea {
+   margin: 0 auto;
+}
+
+.footerLine {
+   border-top: #a9a9a9 0.1px solid;
+   margin-bottom: 15px;
+}
+
+.NexaHUBiconFooter {
+   background-color: var(--primary-lightgreen);
+   width: 110px;
+   height: 19px;
+   display: block;
+   margin: 0 auto;
+}
+
+.copyright {
+   font-size: 10px;
+   color: var(--primary-black);
+   text-align: center;
+   margin-top: 3px;
+   padding-bottom: 10px;
+}

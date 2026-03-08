@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+/* =======================
+common
+========================== */
+:root {
+   --primary-lightGray:#d9d9d9;
+   --primary-green:#1A9B44;
+   --primary-black:#333a3a;
+   --primary-white:#fdfdfd;
+   --primary-lightgreen: #DAF8D3;
+
+   --contentWidth: 91.4%;
+   --contentpadding: 4.2%;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: 
+      'noto Sans JP',
+      Arial, 
+      sans-serif;
+   font-style: normal;
+   color: var(--primary-black,#333a3a);
+   background-color: var(--primary-white,#fdfdfd);
+   line-height: 1.5;
+   /* font-size: 16px; */
+}
+.header {
+   width: 351px;
+   height: 80px;
+   display: flex;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--primary-lightgreen);
+}
+
+.NexaHUBicon {
+   width: 150px;
+   height: 26px;
+}
+
+/* ページ全体は固定 */
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+  background:#eaeaea;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* スマホ枠 */
+.phone{
+   width:375px;
+   height:812px; /* 好きなサイズ */
+   background:#111;
+   border-radius:40px;
+   padding:12px;
+   box-shadow:0 20px 40px rgba(0,0,0,.2);
+   box-sizing: border-box;
+}
+
+/* 画面部分だけスクロール */
+.screen{
+   width:100%;
+   height:100%;
+   background:#fff;
+   border-radius:28px;
+   overflow-y:auto;
+  -webkit-overflow-scrolling:touch; /* iOS風 */
+   overflow-x: hidden;
+}
+
+/* =======================
+ticket/pass
+========================== */
+
+.section__ticketPass{
+   background-color: var(--primary-lightgreen);
+   padding-top: 40px;
+}
+
+/* .icone__block {
+   width: 100%; 
+   max-width: 317px;
+   margin: 0 auto;
+   padding-top: 40px;
+}
+
+.member {
+   width: 32px;
+   height: 52px;
+   margin-right: 5px;
+}
+
+.login {
+   width: 54px;
+   height: 52px;
+} */
+
+.ticketPass--gr {
+   font-size: 2.4rem;
+   font-weight: 700;
+   color: var(--primary-green);
+   text-align: center;
+}
+
+.ticketPass--ja {
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: var(--primary-green);
+   text-align: center;
+}
+
+.ticket__box {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.img__general {
+   margin: 0 auto;
+   margin-top: 25px;
+   border-radius: 10px;
+   display: block;
+   height: 67px;
+}
+
+.img__general2 {
+   display: block;
+   margin: 0 auto;
+   margin-top: 25px;
+   border-radius: 10px;
+   height: 67px;
+} 
+
+.img__generalTxt {
+   color: var(--primary-white);
+   font-size: 2.4rem;
+   font-weight: 700;
+   white-space: nowrap;
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.ticketPass__title {
+   position: relative;
+}
+.general {
+   width: 100%;  
+   max-width: 317px;
+   height: 94px; 
+   border: 2px solid var(--primary-white);
+   border-radius: 10px;
+   display: flex;
+   margin: 0 auto;
+   margin-top: 10px;
+   padding: 10px;
+   background-color: var(--primary-white);
+   border: var(--primary-green) solid 1px;
+
+}
+
+.icone__box {
+   width: 50px;
+   height: 50px;
+   border-radius: 10px;
+   border: var(--primary-green) solid 1.5px;
+}
+
+.icone__contents {
+   width: 45px;
+   height: 45px;
+}
+
+.gr__boxTxt {
+   font-size: 1.4rem;
+   font-weight: 500;
+   letter-spacing: 0.1em;
+   color: var(--primary-white); 
+   padding: 2px 5px;
+   background-color: var(--primary-green);
+   border-radius: 5px;
+   display: inline-block;
+} 
+
+.gr__boxTxt1 {
+   font-size: 1.4rem;
+   font-weight: 500;
+   letter-spacing: 0.1em;
+   color: var(--primary-white); 
+   padding: 2px 5px;
+   background-color: var(--primary-green);
+   border-radius: 5px;
+   margin-bottom: 10px;
+   display: inline-block 
+}
+
+.contentsWrap {
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.price {
+   margin-left: 30px;
+   margin-top: 5px;
+   text-align: left;
+}
+
+.supplement {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 400;
+   white-space: nowrap;
+}
+
+.price__fine {
+   font-size: 2.4rem;
+   color: var(--primary-green);
+   font-weight: 400;
+   margin-top: -10px
+}
+
+.price__bold {
+   font-size: 2.7rem;
+   font-weight: 700;
+} 
+
+/* =======================
+試し上
+========================== */
+.ticketArea{
+   margin: 0 auto;
+}
+
+.ticketIcone {
+   width: 60px;
+   height: 60px;
+   display: block;
+}
+
+.icone__contentsRe {
+   border: var(--primary-black) solid 2px;
+
+}
+
+.priceZone {
+
+}
+
+/* =======================
+試し下
+========================== */
+
+.addtoCart__btn {
+   width: 100%; 
+   max-width: 317px;
+   height: 67px;
+   background-color: var(--primary-green);
+   border-radius: 10px;
+   display: flex;
+   margin: 0 auto;
+   margin-top: 40px;
+   padding-left: 8px;
+   box-shadow: 7px 7px 10px rgb(144, 144, 144);
+}
+
+.addtoCart__btnTxt {
+   font-size: 2.4rem;
+   font-weight: 700;
+   color: var(--primary-white);
+   position: relative;
+   top: 15px; 
+}
+
+.finger__wh {
+   display: block;
+   margin: 0 auto;
+   position: relative;
+   top: -12px;
+   animation: SNSblock 2s ease-out infinite;
+   opacity: 1;
+}
+
+@keyframes finger__wh {
+   0%, 40%, 60%, 80% {
+   transform: scale(2.0);
+}
+
+50%, 70% {
+   transform: scale(0.95);
+   }
+}
+/* =======================
+NexaHUBinformation
+========================== */
+.section__NexaHUBinformation {
+   background-color: var(--primary-lightgreen);
+   text-align: left;
+   justify-content: center;
+   padding-top: 40px;
+}
+
+.NexaHUBinformation__title {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 500;
+   margin-left: 40px;
+}
+
+.NexaHUBinformation__block {
+   margin-bottom: 20px;
+}
+
+.NexaHUBinformation__subTitle {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 400;
+   margin-left: 5px;
+}
+
+.NexaHUBinformation__txt {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+   font-weight: 400;
+   margin-left: 40px;
+}
+
+.NexaHUBinformation__txt1 {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+   font-weight: 400;
+   margin-left: 40px;
+}
+
+.NexaHUBinformation__txtSns {
+   font-size: 1.2rem;
+   color: var(--primary-green);
+   font-weight: 500;
+   margin-left: 40px;
+}
+
+.SNSblock {
+   display: flex;
+   justify-content: left;
+   gap: 10px;
+   animation: SNSblock 2s ease-out infinite;
+   opacity: 1;
+      margin-left: 40px;
+}
+
+@keyframes SNSblock {
+   0%, 40%, 60%, 80% {
+   transform: scale(1.0);
+}
+
+50%, 70% {
+   transform: scale(0.95);
+   }
+}
+
+.sns {
+   width: 20px;
+   height: 20px;
+   margin: 10px 0 40px;
+}
+
+.copyrightArea {
+   margin: 0 auto;
+}
+
+.footerLine {
+   border-top: #a9a9a9 0.1px solid;
+   margin-bottom: 15px;
+}
+
+.NexaHUBiconFooter {
+   background-color: var(--primary-lightgreen);
+   width: 110px;
+   height: 19px;
+   display: block;
+   margin: 0 auto;
+}
+
+.copyright {
+   font-size: 10px;
+   color: var(--primary-black);
+   text-align: center;
+   margin-top: 3px;
+   padding-bottom: 10px;
+}

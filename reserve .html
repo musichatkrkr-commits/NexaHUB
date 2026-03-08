@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="新時代のエンターテインメントと学び。
+       デザイン、アート、エンターテインメントの魅力を満喫できる体験型複合施設として、
+       シンプルでミニマルなデザインの中に、近未来の技術とアートの融合が生み出す
+       驚きの体験が隠されています。">
+  <title>NexaHUB</title>
+  <link rel="stylesheet" href="/css/destyle.css">
+  <link rel="stylesheet" href="/css/reserve.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<div class="phone">
+<div class="screen">
+
+  <header>
+   <div class="header">
+      <img src="/images/NexaHUBicon.png" alt="" class="NexaHUBicon">
+   </div>
+</header>
+
+    <style>
+      .form__item {
+      padding: 40px 40px 0px 40px;
+        width: 100%;
+      }
+      .form__item + .form__item {
+        margin-top: 16px;
+      }
+      .form__item__label {
+        font-size: 16px;
+      }
+      .form__item__label + * {
+        margin-top: 6px;
+      }
+      .form__item__label>span {
+        display: inline-block;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-size: 13px;
+        line-height: 1;
+        vertical-align: top;
+      }
+      .form__item__label>span.--required {
+        background-color: green;
+        border: 1px solid green;
+        color: #fff;
+      }
+      .form__item__label>span.--any {
+        background-color: transparent;
+        border: 1px solid #000;
+      }
+
+      /* selectタグ */
+      .selectWrap {
+        border: 1px solid gray;
+        border-radius: 4px;
+        width: 100%;
+      }
+      .selectWrap select {
+        display: block;
+        width: 100%;
+        padding: 4px 8px 2px;
+        padding-right: 40px;
+        font-size: 16px;
+      }
+
+      /* inputタグ・textareaタグ */
+      .form__item input,
+      .form__item textarea {
+        border: 1px solid gray;
+        border-radius: 4px;
+        width: 100%;
+        padding: 4px 8px 2px;
+        font-size: 16px;
+      }
+    </style>
+</head>
+
+<body>
+  <form action="">
+
+    <!-- selectタグ -->
+    <div class="form__item">
+      <p class="form__item__label">希望イベント：<span class="--required">必須</span></p>
+      <div class="selectWrap">
+        <select name="event" title="希望イベント">
+          <option value="event__1">自分の絵が動き出す！アニメーション体験</option>
+          <option value="event__2">イベント名２</option>
+          <option value="event__3">イベント名３</option>
+        </select>
+      </div>
+    </div>
+
+
+    <!-- inputタグ注意点
+     ※ 項目によってtype属性を変えること
+     名前の項目ならテキスト入力だから　→　type="text"
+     メールアドレスの項目なら　→　type="email"
+     電話な項目なら　→　type="number"
+     などなど...
+
+     ※ 項目によってname属性を変えること
+     これは何のデータをもらうための要素かわかるような名前をつけて
+     名前の項目なら → name="yourname"
+     ご意見またはご質問の項目なら → name="opinions"
+     などなど...
+
+     ※ 初期値をグレー文字で出したいなら
+     placeholder="出したいテキスト"
+    -->
+
+    <!-- inputタグ（カレンダー） -->
+    <div class="form__item">
+      <p class="form__item__label">希望日時：<span class="--required">必須</span></p>
+      <input type="date" is="default-date" />
+    </div>
+
+    <!-- inputタグ（名前） -->
+    <div class="form__item">
+      <p class="form__item__label">名前（フリガナ）：<span class="--required">必須</span></p>
+      <input type="text" name="yourname" placeholder="ヤマダ　タロウ" />
+    </div>
+
+    <!-- textareaタグ（ご意見） -->
+    <div class="form__item">
+      <p class="form__item__label">ご意見またはご質問：<span class="--any">任意</span></p>
+      <textarea name="opinions" placeholder="何かあればご入力ください。" ></textarea>      
+    </div>
+  </form>
+
+  <!-- NexaHUBinformation -->
+<footer class="section__NexaHUBinformation">
+      <div class="NexaHUBinformation__block">
+         <h3 class="NexaHUBinformation__title">OPEN-CLOSE<span class="NexaHUBinformation__subTitle">営業時間</span></h3>
+         <p class="NexaHUBinformation__txt">平日&emsp;9:00-21:00</p>
+         <p class="NexaHUBinformation__txt">土日祝&emsp;8:00-21:00</p>
+      </div>
+      <div class="NexaHUBinformation__block">
+         <h3 class="NexaHUBinformation__title">TEL<span class="NexaHUBinformation__subTitle">電話番号</span></h3>
+         <p class="NexaHUBinformation__txt">078-xxx-xxxx</p>
+      </div>
+      <div class="NexaHUBinformation__block">
+         <h3 class="NexaHUBinformation__title">ADDRESS<span class="NexaHUBinformation__subTitle">所在地</span></h3>
+         <p class="NexaHUBinformation__txt">〒650-0046</p>
+         <p class="NexaHUBinformation__txt1">兵庫県神戸市中央区港島中町8-x-x</p>
+      </div>
+         <p class="NexaHUBinformation__txtSns">Follow Us!</p>
+   <div class="SNSblock">
+      <img class="sns" src="/images/X.svg"></img>
+      <img class="sns" src="/images/instagram.svg"></img>
+      <img class="sns" src="/images/Line.svg"></img>
+      <img class="sns" src="/images/youtube.svg"></img>
+      <img class="sns" src="/images/facebook.svg"></img>
+      <img class="sns" src="/images/TikTok.svg"></img>
+   </div>
+<div class="copyrightArea">
+   <div class="footerLine"></div>
+   <div class="footer">
+      <img src="/images/NexaHUBicon.png" alt="" class="NexaHUBiconFooter">
+</div>
+   <p class="copyright">&copy; 2026 NexaHUB Inc.</p>
+   </div>
+</div>
+</footer>
+   </div>
+</div>
+
+
+   </div>
+</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', _ => {
+      document.querySelectorAll('[type=date]').forEach(element => {
+        let now = new Date();
+        element.value = now.toLocaleDateString('sv-SE');
+      });
+    });
+  </script>
+</body>
+
+</html>
