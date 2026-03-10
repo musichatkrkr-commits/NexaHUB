@@ -4,15 +4,17 @@
 common
 ========================== */
 :root {
-   --primary-lightGray:#d9d9d9;
+   --primary-lightGray:#eee;
    --primary-green:#1A9B44;
    --primary-black:#333a3a;
    --primary-white:#fdfdfd;
-   --primary-lightgreen: #DAF8D3;
-   --primary-lightblue:#D3ECF8;
+   --primary-lightgreen:#DAF8D3;
    --contentWidth: 91.4%;
    --contentpadding: 4.2%;
 }
+
+/* いい感じのボックスシャドウ
+box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4); */
 
 html {
    font-size: 62.5%;
@@ -27,6 +29,7 @@ body {
    color: var(--primary-black,#333a3a);
    background-color: var(--primary-white,#fdfdfd);
    line-height: 1.5;
+   /* font-size: 16px; */
 }
 
 .header {
@@ -78,142 +81,146 @@ body{
 }
 
 /* =======================
-reserve
+map
 ========================== */
-.section__reserve {
+.section__map {
    background-color: var(--primary-white);
    padding: 40px 0;
 }
 
-/* .icone__block {
-   width: 317px;
+.map__title {
    margin: 0 auto;
 }
 
-.member {
-   width: 32px;
-   height: 52px;
-   margin-right: 5px;
-}
-
-.login {
-   width: 54px;
-   height: 52px;
-} */
-
-.reserve--bk {
+.map--black {
    font-size: 2.4rem;
    font-weight: 700;
    color: var(--primary-black);
    text-align: center;
 }
 
-
-.reserve--ja {
+.map--ja {
    font-size: 1.2rem;
    font-weight: 400;
-   color: var(--primary-black);
    text-align: center;
 }
 
-/* .reserve__btnList {
-   width: 89px;
-   height: 57px;
-   margin-left: 10px;
-   background-color: var(--primary-black);
-   border-radius: 10px;
-   box-shadow: 7px 7px 10px rgb(144, 144, 144);
-   animation: event__btnList 3s ease-in-out infinite alternate;
-   display: inline-block;
-   transition: 1.5s ease-in-out;
-   width: 73px;
-   height: 53px;
-   margin-top: 15px;
-}  */
-
-/* @keyframes event__btnList {
-   0% {
-      transform:translate(0, 0) rotate(-7deg);
-   }
-   50% {
-      transform:translate(0, -7px) rotate(0deg);
-   }
-   100% {
-      transform:translate(0, 0) rotate(7deg);
-   }
-} */
-
-
-.reserve__btnListTxt {
-   font-size: 1.6rem;
-   color: var(--primary-white);
+.floor {
+   display: flex;
+   justify-content: center;
+   font-size: 2.4rem;
    font-weight: 700;
-   text-align: center;
-   line-height: 1.2;
+   gap: 50px;
+   margin-top: 30px;
 }
 
-.reserve__span {
+.f1,.f3 {
+   color: var(--primary-lightGray);
+}
+
+.mapImg {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.mapImg__1f {
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 320px;
+   margin-bottom: 30px;
+}
+
+.detailLook {
+   display: flex;
+   justify-content: center;
+}
+
+.map__description {
+   width: 100%; 
+   max-width: 317px;
+   border-radius: 10px;
+   border: solid 2px var(--primary-lightGray);
+   margin: 0 auto;
+   margin-top: 15px;
+}
+.mapIconInner{
+   display: flex;
+}
+.map__description--under {
+   width: 100%; 
+   max-width: 317px;
+   border-radius: 10px;
+   border: solid 2px var(--primary-lightGray);
+   margin: 0 auto;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+.mapBtnWrap {
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+   padding: 10px 0;
+}
+
+.reviewLook,.waitTimelook {
+   color: var(--primary-white);
+   font-size: 1.2rem;
+   font-weight: 500;
+   letter-spacing: 0.05em;
+   background-color: var(--primary-green);
+   border-radius: 10px;
+   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
+   align-items: center;
+   justify-content: center;
+   white-space: nowrap;
+   padding: 5px 12px;
+}
+
+.mapImg__VR {
+   width: 105px;
+   height: 105px;
+   border-radius: 10px;
+   margin-top: 13px;
+   margin-left: 10px;
+   object-fit: cover;
+}
+
+.mapImg__robot {
+   width: 105px;
+   height: 105px;
+   border-radius: 10px;
+   margin-top: 13px;
+   margin-left: 10px;
+}
+
+.mapSquare {
+   margin-top: 13px;
+   margin-left: 10px;
+}
+
+
+.map__txt1 {
    font-size: 1.4rem;
+   color: #E62280;
 }
 
-/* =======================
-ああああああ
-========================== */
-      .form__item {
-      padding: 40px 40px 0px 40px;
-        width: 100%;
-      }
-      .form__item + .form__item {
-        margin-top: 16px;
-      }
-      .form__item__label {
-        font-size: 16px;
-      }
-      .form__item__label + * {
-        margin-top: 6px;
-      }
-      .form__item__label>span {
-        display: inline-block;
-        border-radius: 4px;
-        padding: 4px 8px;
-        font-size: 13px;
-        line-height: 1;
-        vertical-align: top;
-      }
-      .form__item__label>span.--required {
-        background-color: green;
-        border: 1px solid green;
-        color: #fff;
-      }
-      .form__item__label>span.--any {
-        background-color: transparent;
-        border: 1px solid #000;
-      }
+.map__txt2 {
+   font-size: 1.4rem;
+   color: #FBA429;
+}
 
-      /* selectタグ */
-      .selectWrap {
-        border: 1px solid gray;
-        border-radius: 4px;
-        width: 100%;
-      }
-      .selectWrap select {
-        display: block;
-        width: 100%;
-        padding: 4px 8px 2px;
-        padding-right: 40px;
-        font-size: 16px;
-      }
+.map__txt1small {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+}
 
-      /* inputタグ・textareaタグ */
-      .form__item input,
-      .form__item textarea {
-        border: 1px solid gray;
-        border-radius: 4px;
-        width: 100%;
-        padding: 4px 8px 2px;
-        font-size: 16px;
-      }
-
+.map__txt2small {
+   font-size: 1.2rem;
+   color: var(--primary-black);
+}
 
 /* =======================
 NexaHUBinformation

@@ -140,7 +140,7 @@ mainvisual
 
 .mainVisual {  
    font-size: 1.4rem;
-   padding: 40px 0;
+   padding: 60px 0;
    text-align: center;
 }
 
@@ -231,6 +231,7 @@ introduction
    background-color: var(--primary-green);
    padding: 10px 10px;
    border-radius: 10px;
+   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5)
 }
 
 /* =======================
@@ -313,7 +314,6 @@ icon
 /* =======================
 map
 ========================== */
-
 .section__map {
    background-color: var(--primary-white);
    padding: 40px 0;
@@ -368,20 +368,6 @@ map
    justify-content: center;
 }
 
-.detailLookbutton {
-   color: var(--primary-white);
-   font-size: 1.6rem;
-   font-weight: 500;
-   letter-spacing: 0.05em;
-   background-color: var(--primary-green);
-   border-radius: 10px;
-   display: flex;
-   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
-   align-items: center;
-   justify-content: center;
-   padding: 8px 20px;
-}
-
 .map__description {
    width: 100%; 
    max-width: 317px;
@@ -396,12 +382,10 @@ map
 .map__description--under {
    width: 100%; 
    max-width: 317px;
-   /* height: 134; */
    border-radius: 10px;
    border: solid 2px var(--primary-lightGray);
    margin: 0 auto;
    margin-top: 10px;
-   display: flex;
    margin-bottom: 20px;
 }
 
@@ -409,7 +393,7 @@ map
    display: flex;
    gap: 5px;
    justify-content: center;
-   padding: 5px 0;
+   padding: 10px 0;
 }
 
 .reviewLook,.waitTimelook {
@@ -423,6 +407,7 @@ map
    align-items: center;
    justify-content: center;
    white-space: nowrap;
+   padding: 5px 12px;
 }
 
 .mapImg__VR {

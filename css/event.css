@@ -116,6 +116,7 @@ event
    display: inline-block;
    margin: 20px 0 40px;
 }
+
 .event__card__img {
    width: 100%;
 }
@@ -141,9 +142,10 @@ event
    width: 100%; 
    max-width: 317px;
    height: auto;
-   border-radius: 10px;
    box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
    margin-bottom: 20px;
+   border-radius: 10px;
+   overflow: hidden;
 }
 
 .event__card__miniBtnWrap {
