@@ -108,20 +108,8 @@ ticket/pass
    text-align: center;
 }
 
-.img__general {
-   margin: 0 auto;
-   border-radius: 10px;
-   display: block;
-   height: 67px;
-   margin-top: 60px;
 
-}
-
-.img__general-modifiers {
-   margin-top: 40px;
-}
-
-.img__generalTxt {
+/* .img__generalTxt {
    color: var(--primary-white);
    font-size: 1.8rem;
    font-weight: 700;
@@ -131,10 +119,20 @@ ticket/pass
    top: 70%;
    left: 50%;
    transform: translate(-50%, -50%);
-}
+} */
 
 .ticketPass__title {
-   position: relative;
+   font-size: 1.6rem;
+   font-weight: 700;
+   color: var(--primary-green);
+   letter-spacing: 0.2rem;
+   background-color: var(--primary-lightgreen);
+   width: 317px;
+   margin: 0 auto;
+   border-radius: 10px;
+   padding: 10px 0;
+   margin-top: 40px;
+
 }
 
 .general {
@@ -155,6 +153,14 @@ ticket/pass
    height: 73px;
    border-radius: 10px;
    overflow: hidden;
+}
+
+.icone__box-modifire {
+   width: 73px;
+   height: 73px;
+   border-radius: 10px;
+   overflow: hidden;
+   border: var(--primary-lightGray) 2px solid;
 }
 
 .icone__contents {
