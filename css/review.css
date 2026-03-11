@@ -38,6 +38,7 @@ body {
    align-items: center;
    justify-content: center;
    background-color: var(--primary-lightgreen);
+   box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.5);
 }
 
 .NexaHUBicon {

@@ -8,13 +8,11 @@ common
    --primary-green:#1A9B44;
    --primary-black:#333a3a;
    --primary-white:#fdfdfd;
-   --primary-lightgreen:#DAF8D3;
+   --primary-lightgreen: #DAF8D3;
+   --primary-lightblue:#D3ECF8;
    --contentWidth: 91.4%;
    --contentpadding: 4.2%;
 }
-
-/* いい感じのボックスシャドウ
-box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4); */
 
 html {
    font-size: 62.5%;
@@ -29,7 +27,6 @@ body {
    color: var(--primary-black,#333a3a);
    background-color: var(--primary-white,#fdfdfd);
    line-height: 1.5;
-   /* font-size: 16px; */
 }
 
 .header {
@@ -41,6 +38,7 @@ body {
    justify-content: center;
    background-color: var(--primary-lightgreen);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
+   position: relative;
 }
 
 .NexaHUBicon {
@@ -82,147 +80,104 @@ body{
 }
 
 /* =======================
-map
+reserve
 ========================== */
-.section__map {
+.section__login {
    background-color: var(--primary-white);
-   padding: 40px 0;
+   padding: 40px 0 60px;
 }
 
-.map__title {
-   margin: 0 auto;
-}
-
-.map--black {
-   font-size: 2.4rem;
-   font-weight: 700;
+.login--bk {
+   font-size: 1.8rem;
+   font-weight: 600;
+   letter-spacing: 0.15em;
    color: var(--primary-black);
-   text-align: center;
+   text-align: left;
+   padding-left: 20px;
+   margin: 10px 0;
 }
 
-.map--ja {
-   font-size: 1.2rem;
-   font-weight: 400;
-   text-align: center;
-}
+/* =======================
+godY
+========================== */
 
-.floor {
-   display: flex;
-   justify-content: center;
-   font-size: 2.4rem;
-   font-weight: 700;
-   gap: 50px;
-   margin-top: 30px;
-}
+      .form__item {
+      padding: 0 20px 0px 20px;
+      width: 100%;
+      }
+      .form__item + .form__item {
+         margin-top: 16px;
+      }
+      .form__item__label {
+         font-size: 14px;
+      }
 
-.f2,.f1 {
-   color: var(--primary-lightGray);
-}
+      /* selectタグ */
+      .selectWrap {
+        border: 1px solid gray;
+        border-radius: 8px;
+        width: 100%;
+      }
 
-.mapImg {
-   display: flex;
-   justify-content: center;
-   margin-top: 20px;
-}
+      /* inputタグ・textareaタグ */
+      .form__item input {
+        border: 1px solid gray;
+        border-radius: 8px;
+        width: 100%;
+        padding: 20px 8px 5px;
+        font-size: 1.6rem;
+      }
 
-.mapImg__1f {
-   background-position: center top;
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 320px;
-   margin-bottom: 30px;
-}
-
-.detailLook {
-   display: flex;
-   justify-content: center;
-}
-
-.map__description {
-   width: 100%; 
-   max-width: 317px;
-   border-radius: 10px;
-   border: solid 2px var(--primary-lightGray);
-   margin: 0 auto;
-   margin-top: 15px;
-}
-.mapIconInner{
-   display: flex;
-}
-.map__description--under {
-   width: 100%; 
-   max-width: 317px;
-   border-radius: 10px;
-   border: solid 2px var(--primary-lightGray);
-   margin: 0 auto;
-   margin-top: 10px;
-   margin-bottom: 20px;
-}
-
-.mapBtnWrap {
-   display: flex;
-   gap: 5px;
-   justify-content: center;
-   padding: 10px 0;
-}
-
-.reviewLook,.waitTimelook {
-   color: var(--primary-white);
-   font-size: 1.2rem;
+.loginBtn {
+   font-size: 1.6rem;
    font-weight: 500;
-   letter-spacing: 0.05em;
+   letter-spacing: 0.1em;
+   color: var(--primary-white);
    background-color: var(--primary-green);
+   width: 311px;
+   padding: 5px 0;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   margin-top: 12px;
    border-radius: 10px;
-   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
-   align-items: center;
-   justify-content: center;
-   white-space: nowrap;
-   padding: 5px 12px;
+   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5);
 }
 
-.mapImg__VR {
-   width: 105px;
-   height: 105px;
-   border-radius: 10px;
-   margin-top: 13px;
-   margin-left: 10px;
-   object-fit: cover;
+.registration {
+   margin-top: 60px;
+   text-align: center;
 }
 
-.mapImg__robot {
-   width: 105px;
-   height: 105px;
-   border-radius: 10px;
-   margin-top: 13px;
-   margin-left: 10px;
-}
-
-.mapSquare {
-   margin-top: 13px;
-   margin-left: 10px;
-}
-
-
-.map__txt1 {
-   font-size: 1.4rem;
-   color: #E62280;
-}
-
-.map__txt2 {
-   font-size: 1.4rem;
-   color: #FBA429;
-}
-
-.map__txt1small {
-   font-size: 1.2rem;
+.registration__title {
+   font-size: 1.8rem;
+   font-weight: 600;
+   letter-spacing: 0.05em;
    color: var(--primary-black);
 }
 
-.map__txt2small {
-   font-size: 1.2rem;
+.registration__txt {
+   font-size: 1.4rem;
+   font-weight: 400;
    color: var(--primary-black);
+   margin-top: 10px;
 }
 
+.newLoginBtn {
+   font-size: 1.8rem;
+   font-weight: 700;
+   letter-spacing: 0.2em;
+   color: var(--primary-white);
+   background-color: var(--primary-green);
+   width: 311px;
+   padding: 15px 0;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   margin-top: 16px;
+   border-radius: 10px;
+   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5);
+}
 /* =======================
 NexaHUBinformation
 ========================== */
