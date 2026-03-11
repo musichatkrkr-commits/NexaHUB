@@ -9,7 +9,7 @@
        驚きの体験が隠されています。">
   <title>NexaHUB</title>
   <link rel="stylesheet" href="css/destyle.css">
-  <link rel="stylesheet" href="css/reserve.css">
+  <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,27 +26,13 @@
 </header>
 
 <body>
-<section class="section__reserve">
-  <h3 class="reserve--gr">RESERVE</h3>
-  <h2 class="reserve--ja">予約する</h2>
+<section class="section__login">
+  <h3 class="login--bk">会員ログイン</h3>
 
 <!-- /* =======================
 godY
 ========================== */ -->
   <form action="">
-
-<div class="reserveArea">
-    <!-- selectタグ -->
-    <div class="form__item">
-      <p class="form__item__label">希望イベント：<span class="--required">必須</span></p>
-      <div class="selectWrap">
-        <select name="event" title="希望イベント">
-          <option value="event__1">自分の絵が動き出す！アニメーション体験</option>
-          <option value="event__2">実際に技術や知識を学ぶワークショップ</option>
-          <option value="event__3">屋外で季節や自然のインタラクティブな体験</option>
-        </select>
-      </div>
-    </div>
 
 
     <!-- inputタグ注意点
@@ -66,37 +52,21 @@ godY
      placeholder="出したいテキスト"
     -->
 
-    <!-- inputタグ（カレンダー） -->
-    <div class="form__item">
-      <p class="form__item__label">希望日時：<span class="--required">必須</span></p>
-      <input type="date" is="default-date" />
-    </div>
-
-    <!-- inputタグ（名前） -->
-    <div class="form__item">
-      <p class="form__item__label">名前（フリガナ）：<span class="--required">必須</span></p>
-      <input type="text" name="yourname" placeholder="ヤマダ　タロウ" />
-    </div>
-
     <!-- inputタグ（メールアドレス） -->
     <div class="form__item">
-      <p class="form__item__label">メールアドレス：<span class="--required">必須</span></p>
+      <p class="form__item__label">メールアドレス</p>
       <input type="email" name="yourEmail" placeholder="xxx@example.com" />
     </div>
 
-    <!-- inputタグ（電話番号） -->
-    <div class="form__item">
-      <p class="form__item__label">電話番号：<span class="--required">必須</span></p>
-      <input type="number" name="yourNumber" placeholder="080-xxxx-xxxx" />
-    </div>
-
-    <!-- textareaタグ（ご意見） -->
-    <div class="form__item">
-      <p class="form__item__label">ご意見またはご質問：<span class="--any">任意</span></p>
-      <textarea name="opinions" placeholder="何かあればご入力ください。" ></textarea>      
-    </div>
-  </form>
-<a href="#" class="done">申し込む</a>
+   <div class="form__item">
+   <p class="form__item__label">パスワード</p>
+   <input type="password" id="pass" name="password" minlength="8" required />
+</div>
+<a href="#" class="loginBtn">ログインする</a>
+<div class="registration">
+   <p class="registration__title">会員登録がお済みでないお客様</p>
+   <p class="registration__txt">会員登録がお済みでないお客様は、<br>こちらから新規会員登録へお進みください。</p>
+<a href="#" class="newLoginBtn">新規会員登録</a>
 </div>
 </section>
 
