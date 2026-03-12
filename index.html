@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
- <meta name="robots" content="noindex">
+
+<head>
+   <meta name="robots" content="noindex">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="新時代のエンターテインメントと学び。
@@ -11,7 +13,11 @@
    <link rel="stylesheet" href="css/destyle.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Favicon -->
+   <link rel="icon" link rel=”shortcut icon” type="image/x-icon" href="images/favicon.ico">
 </meta>
+</head>
+
 
 <body>
 <!-- /* =======================
@@ -22,9 +28,43 @@ mainVisual
 
 <header>
    <div class="header">
-      <img src="images/NexaHUBicon.png" alt="" class="NexaHUBicon">
+
+<!-- チャッピーハンバーガーボタン -->
+<button class="hamburger">☰</button>
+<nav class="menu">
+  <ul>
+    <li>HOME</li>
+    <li>ABOUT</li>
+    <li>CONTACT</li>
+  </ul>
+</nav>
+<!-- チャッピー終わり -->
+
+      <!-- <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> -->
+<p class="NexaHUBiconWrap"><img src="images/NexaHUBicon.png" alt="" class="NexaHUBicon"></p>
 </div>
 </header>
+<!-- 
+<div id="navArea">
+  <nav>
+    <div class="inner">
+      <ul>
+        <li><a href="#">Text</a></li>
+        <li><a href="#">Text</a></li>
+        <li><a href="#">Text</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="mask"></div>
+
+</div>
+ -->
    <main>
          <div class="mainImg__wrapper">
                <img class="mainImg" src="images/mainVisual.png" alt="デザイン、アート、エンターテインメント">
@@ -214,8 +254,11 @@ map
    </div>
 </div>
 
+
+
 <script type="module" src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"></script>
 <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 </body>
 </html>
