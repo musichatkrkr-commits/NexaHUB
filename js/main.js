@@ -1,4 +1,13 @@
-const track = document.querySelector('.slider-track');
+// チャッピーハンバーガーボタン
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
+
+// チャッピー終わり
+
 const slides = document.querySelectorAll('.slide');
 let current = 0;
 
