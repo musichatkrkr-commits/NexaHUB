@@ -87,16 +87,32 @@ reserve
    padding: 40px 0 60px;
 }
 
-.login--bk {
-   font-size: 1.8rem;
-   font-weight: 600;
-   letter-spacing: 0.15em;
-   color: var(--primary-black);
-   text-align: left;
-   padding-left: 20px;
-   margin: 10px 0;
+.login {
+   display: block;
+   font-size: 2.2rem;
+   font-weight: 700;
+   color: var(--primary-green);
+   text-align: center;
 }
 
+.login--ja {
+   text-align: center;
+   font-size: 1.4rem;
+   color: var(--primary-green);
+   font-weight: 400;
+   margin-bottom: 16px;
+   margin-top: 3px;
+   letter-spacing: 0.1em;
+}
+
+.login--bk {
+   text-align: left;
+   font-size: 1.8rem;
+   color: var(--primary-black);
+   font-weight: 600;
+   letter-spacing: 0.05em;
+   margin: 40px 0 10px 20px;
+}
 /* =======================
 godY
 ========================== */

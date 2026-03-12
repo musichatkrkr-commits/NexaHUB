@@ -39,6 +39,7 @@ body {
    justify-content: center;
    background-color: var(--primary-lightgreen);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.5);
+   position: relative;
 }
 
 .NexaHUBicon {
@@ -89,21 +90,21 @@ reviewreview
 }
 
 .title__block {
-   display: flex;
-   justify-content: center;
+   text-align: center;
 }
 
 .review--bk {
    font-size: 2.4rem;
    font-weight: 700;
-   color: var(--primary-black);
+   color: var(--primary-green);
 }
 
 .review--ja {
-   font-size: 1.2rem;
+   font-size: 1.3rem;
    font-weight: 400;
-   color: var(--primary-black);
+   color: var(--primary-green);
    margin-left: 10px;
+   display: block;
 }
 
 .reviewBtn__wrap {
