@@ -1,3 +1,6 @@
+/* =======================
+ハンバーガーボタン
+========================== */ 
 const burger = document.querySelector('#burger');
 const menu = document.querySelector('#menu');
 
@@ -7,6 +10,12 @@ if(burger) {
     menu.classList.toggle('is-active');
   })
 }
+
+/* =======================
+ハンバーガーボタン終わり
+========================== */ 
+
+
 const slides = document.querySelectorAll('.slide');
 let current = 0;
 
