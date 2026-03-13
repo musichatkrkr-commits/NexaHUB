@@ -1,13 +1,12 @@
-// チャッピーハンバーガーボタン
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
+const burger = document.querySelector('#burger');
+const menu = document.querySelector('#menu');
 
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('open');
-});
-
-// チャッピー終わり
-
+if(burger) {
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  })
+}
 const slides = document.querySelectorAll('.slide');
 let current = 0;
 
