@@ -16,16 +16,55 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- Favicon -->
    <link rel="icon" link rel=”shortcut icon” type="image/x-icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="css/scss.css">
 </head>
 
 <body>
 <div class="phone">
 <div class="screen">
 
-  <header>
-   <div class="header">
+<header>
+<div class="header">
+   <p class="NexaHUBiconWrap">
       <img src="images/NexaHUBicon.png" alt="" class="NexaHUBicon">
-   </div>
+      <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </button>
+      <nav class="menu" id="menu">
+         <ul class="menuListWrap">
+            <a href="#map1f">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">館内地図</li>
+            </a>
+            <a href="#introductionID">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">エリア紹介</li>
+            </a>
+            <a href="currentSituation.html">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">待ち時間 / 混雑状況</li>
+            </a>
+            <a href="event.html">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">イベントスケジュール</li>
+            </a>
+            <a href="reserve.html">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">予約する</li>
+            </a>
+            <a href="review.html">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">レビュー</li>
+            </a>
+            <a href="ticketPass.html">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">チケット購入</li>
+            </a>
+            <a href="#">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">アクセス</li>
+            </a>
+            <a href="">
+               <li class="menuList"><img src="images/robotBkIcone.svg" class="menuIconeRobot" alt="">アプリダウンロード</li>
+            </a>
+         </ul>
+      </nav>   
+   </p>
+</div>
 </header>
 
 <body>
@@ -125,6 +164,8 @@ godY
       });
     });
   </script>
+<script src="js/main.js"></script>
+
 </body>
 
 </html>
