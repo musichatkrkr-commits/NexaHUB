@@ -35,6 +35,8 @@ body {
    width: 351px;
    height: 120px;
    background-color: var(--primary-white);
+   box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
+   position: relative;
 }
 
 .NexaHUBiconWrap {
