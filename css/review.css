@@ -75,36 +75,11 @@ body {
 /* ページ全体は固定 */
 body{
   margin:0;
-  height:100vh;
-  overflow:hidden;
   background:#eaeaea;
   display:flex;
   justify-content:center;
   align-items:center;
 }
-
-/* スマホ枠 */
-.phone{
-   width:375px;
-   height:812px; /* 好きなサイズ */
-   background:#111;
-   border-radius:40px;
-   padding:12px;
-   box-shadow:0 20px 40px rgba(0,0,0,.2);
-   box-sizing: border-box;
-}
-
-/* 画面部分だけスクロール */
-.screen{
-   width:100%;
-   height:100%;
-   background:#fff;
-   border-radius:28px;
-   overflow-y:auto;
-  -webkit-overflow-scrolling:touch; /* iOS風 */
-   overflow-x: hidden;
-}
-
    /* =======================
 reviewreview
 ========================== */
