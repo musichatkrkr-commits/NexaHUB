@@ -31,26 +31,36 @@ body {
    background-color: var(--primary-white,#fdfdfd);
    line-height: 1.5;
 }
+body{
+  margin:0;
+  background:#eaeaea;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
 
 .header {
-   width: 351px;
-   height: 120px;
+   display: flex;
+   justify-content: center;
+   padding-top: 3rem;
+   width: 100vh;
+   height: 10vh;
    background-color: var(--primary-white);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
    position: relative;
 }
 
 .NexaHUBiconWrap {
-   display: flex;
    height: 100%;
    align-items: center;
 }
 
 .NexaHUBicon {
-   width: 150px;
+   width: 50%;
+   min-width: 60%;
    height: auto;
-   display: block;
-   margin: 50px auto 0;
 }
 
 .menuListWrap {
@@ -58,8 +68,8 @@ body {
 }
 
 .menuIconeRobot {
-   width: 19px;
-   height: 19px;
+   width: 1.2rem;
+   height: 1.2rem;
    margin-bottom: 7px;
    margin-right: 7px;
 }
@@ -68,15 +78,7 @@ body {
    color: var(--primary-black);
    font-size: 1.8rem;
    font-weight: 400;
-   margin-top: 25px;
-}
-
-body{
-  margin:0;
-  background:#eaeaea;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+   margin-top: 4rem;
 }
 
 
@@ -113,7 +115,7 @@ mainvisual
 .Typewritten-text2 {
    font-size: 1.6rem;
    font-weight: 700;
-   margin-top: 40px;
+   margin-top: 2.5rem;
    white-space: nowarp;
 }
 
@@ -134,7 +136,7 @@ mainvisual
 } 
 
 .mainVisualTxtWrap {
-   padding: 60px 0;
+   padding: 4rem 0;
    text-align: center;
    background-color: var(--primary-white);
 }
@@ -148,15 +150,9 @@ mainvisual
 }
 
 .mainVisual__txt02 {
-   margin-top: 30px;
+   margin-top: 2rem;
    width: 100%; 
 }
-
-.video {
-   width: 375px;
-   height: 813px;
-}
-
 /* =======================
 introduction
 ========================== */
