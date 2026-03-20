@@ -30,27 +30,21 @@ body {
 }
 
 .header {
-   width: 351px;
-   height: 120px;
+   width: 100vh;
+   height: calc(120 / 16 * 1rem);
    background-color: var(--primary-lightgreen);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
    position: relative;
 }
 
 .NexaHUBiconWrap {
-   display: flex;
    height: 100%;
-   align-items: center;
+   text-align: center;
 }
 
 .NexaHUBicon {
-   width: 150px;
-   height: 26px;
-   display: block;
-   margin: 0 auto;
-   justify-content: center;  
-   margin-right: 50px;
-   margin-top: 50px;
+   width: calc(150 / 16 * 1rem);
+   height: calc(26 / 16 * 1rem);
 }
 
 .menuListWrap {
@@ -114,7 +108,7 @@ currentSituation
    color: var(--primary-white);
    letter-spacing: 0.4rem;
    background-color: var(--primary-green);
-   width: 317px;
+   width: 100vh;
    margin: 0 auto;
    border-radius: 10px;
    padding: 10px 0;
@@ -136,7 +130,6 @@ currentSituation
 
 .general {
    width: 100%;  
-   max-width: 317px;
    height: 94px; 
    border-radius: 10px;
    display: flex;
@@ -246,18 +239,6 @@ currentSituation
    font-weight: 400;
    padding-top: 13px;
 }
-
-/* .addtoCart__btn {
-   display: block;
-   font-size: 1.6rem;
-   font-weight: 500;
-   color: var(--primary-white);
-   background-color: var(--primary-green);
-   padding: 10px;
-   margin: 40px 60px 60px;
-   border-radius: 10px;
-   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5); 
-} */
 
 .fa-solid.fa-1,.fa-solid.fa-2,.fa-solid.fa-3,.fa-solid.fa-4,.fa-solid.fa-5,.fa-solid.fa-6,.fa-solid.fa-7.fa-solid.fa-8 {
    font-size: 1.2rem;
