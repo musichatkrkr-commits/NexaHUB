@@ -25,26 +25,44 @@ body {
       sans-serif;
    font-style: normal;
    color: var(--primary-black,#333a3a);
-   background-color: var(--primary-white,#fdfdfd);
    line-height: 1.5;
+   background-color: var(--primary-white,#fdfdfd);
+}
+
+.container {
+   width: 100%;
+   padding: 1rem;
+   margin: 0 auto;
+
 }
 
 .header {
-   width: 100vh;
+   width: 100vw;
    height: calc(120 / 16 * 1rem);
-   background-color: var(--primary-lightgreen);
+   /* background-color: var(--primary-lightgreen); */
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
    position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .NexaHUBiconWrap {
-   height: 100%;
-   text-align: center;
+   display: flex;
+   margin: 0;
+   align-items: center;
+   justify-content: center;
 }
 
 .NexaHUBicon {
-   width: calc(150 / 16 * 1rem);
-   height: calc(26 / 16 * 1rem);
+   display: block;
+   width: 150px;
+   /* height: 43.2%; */
+}
+
+.burger {
+   position: absolute;
+   left: 1rem;
 }
 
 .menuListWrap {
@@ -63,15 +81,6 @@ body {
    font-size: 1.8rem;
    font-weight: 400;
    margin-top: 25px;
-}
-
-/* ページ全体は固定 */
-body{
-  margin:0;
-  background:#eaeaea;
-  display:flex;
-  justify-content:center;
-  align-items:center;
 }
 
 /* =======================
