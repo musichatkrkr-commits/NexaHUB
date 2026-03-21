@@ -38,7 +38,7 @@ body {
 }
 
 .header {
-   padding: 6rem 0;
+   padding: 4rem 0;
    width: 100vw;
    height: 10vh;
    background-color: var(--primary-white);
@@ -46,7 +46,6 @@ body {
    position: relative;
    position: fixed;
    top: 0;
-
 }
 
 

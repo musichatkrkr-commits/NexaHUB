@@ -38,12 +38,14 @@ body {
 }
 
 .header {
-   padding: 6rem 0;
+   padding: 4rem 0;
    width: 100vw;
    height: 10vh;
    background-color: var(--primary-white);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
    position: relative;
+   position: fixed;
+   top: 0;
 }
 
 
