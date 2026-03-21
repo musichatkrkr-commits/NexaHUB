@@ -41,7 +41,7 @@ body {
    display: flex;
    justify-content: center;
    padding-top: 3rem;
-   width: 100vh;
+   width: 100vw;
    height: 10vh;
    background-color: var(--primary-white);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
@@ -83,12 +83,13 @@ body {
 mainvisual
 ========================== */
 .mainImg__wrapper {
+   width: 100%;
    position: relative;
 }
 
 .mainImg__wrapper .mainImg {
    display: block;
-   width: 100%;
+   width: 100vw;
    height: auto;
 }
 
@@ -131,9 +132,10 @@ mainvisual
 } 
 
 .mainVisualTxtWrap {
+   width: 100%;
    padding: 4rem 0;
    text-align: center;
-   background-color: var(--primary-white);
+   background-color: var(--primary-lightGray);
 }
 
 .mainVisual {  
@@ -305,6 +307,7 @@ icon
 map
 ========================== */
 .section__map {
+   width: 100%;
    background-color: var(--primary-white);
    padding: 40px 0;
 }
@@ -448,6 +451,7 @@ map
 NexaHUBinformation
 ========================== */
 .section__NexaHUBinformation {
+   width: 100%;
    background-color: var(--primary-lightgreen);
    text-align: left;
    justify-content: center;
