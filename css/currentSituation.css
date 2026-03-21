@@ -20,6 +20,11 @@ html {
    font-size: 62.5%;
 }
 
+/* * {
+   border: 1px solid red;
+}
+ */
+
 body {
    width: 100%;
    font-family: 
@@ -34,20 +39,19 @@ body {
 
 .container {
    width: 100%;
-   padding: 0 1rem;
+   padding: 0 1.6rem;
 }
 
 .header {
-   padding: 4rem 0;
+   padding: 2rem 0;
    width: 100vw;
-   height: 10vh;
-   background-color: var(--primary-white);
+   height: 8.4rem;
+   background-color: var(--primary-lightgreen);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
-   position: relative;
-   position: fixed;
+   position: sticky;
    top: 0;
+   z-index: 4;
 }
-
 
 .NexaHUBiconWrap {
    display: flex;
@@ -57,21 +61,20 @@ body {
 
 .burger {
    position: relative;
-   z-index: 10000;
 }
 
 .NexaHUBicon {
    width: 22.1rem;
-   height: 100%;
+   height: 3.9rem;
 }
 
 .menuListWrap {
-   padding: 20px;
+   padding: 2rem;
 }
 
 .menuIconeRobot {
-   width: 1.2rem;
-   height: 1.2rem;
+   width: 2rem;
+   height: 2rem;
    margin-bottom: 7px;
    margin-right: 7px;
 }
@@ -80,14 +83,19 @@ body {
    color: var(--primary-black);
    font-size: 1.8rem;
    font-weight: 400;
-   margin-top: 4rem;
+   margin-top: 2rem;
 }
+
 /* =======================
 currentSituation
 ========================== */
 .section__ticketPass{
    background-color: var(--primary-white);
-   padding-top: 40px;
+   padding-top: 4rem;
+   width: 100vw;
+   /* position: relative;
+   left: 50%;
+   transform: translateX(-50%); */
 }
 
 .ticketPass--gr {
@@ -108,6 +116,7 @@ currentSituation
    display: flex;
    flex-direction: column;
    text-align: center;
+   width: 100vw;
 }
 
 .ticketPass__title {
@@ -116,11 +125,11 @@ currentSituation
    color: var(--primary-white);
    letter-spacing: 0.4rem;
    background-color: var(--primary-green);
-   width: 100vh;
+   width: 31.7rem;
    margin: 0 auto;
-   border-radius: 10px;
-   padding: 10px 0;
-   margin-top: 40px;
+   border-radius: 1rem;
+   padding: 1rem 0;
+   margin-top: 4rem;
 }
 
 .ticketPass__title-modifire {
@@ -129,39 +138,41 @@ currentSituation
    color: var(--primary-white);
    letter-spacing: 0.5rem;
    background-color: var(--primary-green);
-   width: 317px;
+   width: 31.7rem;
    margin: 0 auto;
-   border-radius: 10px;
-   padding: 10px 0;
-   margin-top: 60px;
+   border-radius: 1rem;
+   padding: 1rem 0;
+   margin-top: 6rem;
 }
 
 .general {
-   width: 100%;  
-   height: 94px; 
-   border-radius: 10px;
+   width: 100vw;
+   height: auto; 
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 1rem;
    display: flex;
-   margin: 0 auto;
-   margin-top: 10px;
-   padding: 10px;
+   margin-top: 1rem;
+   padding: 1rem;
    background-color: var(--primary-lightGray);
-   gap: 15px;
+   gap: 1.5rem;
 }
 
 .general-modifire {
-   width: 100%;  
-   max-width: 317px;
-   height: 94px; 
-   border-radius: 10px;
+   width: 100vw;  
+   height: auto; 
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 1rem;
    display: flex;
-   margin: 0 auto;
-   margin-top: 10px;
-   padding: 10px;
+   margin-top: 1rem;
+   padding: 1rem;
    background-color: var(--primary-lightGray);
-   gap: 15px;
-   margin-bottom: 60px;
+   gap: 1.5rem;
+   margin-bottom: 6rem;
 }
-
 
 .icone__box {
    width: 73px;
@@ -176,7 +187,8 @@ currentSituation
 
 .ticket__txtArea {
    display: block;
-   padding: 5px;
+   margin: 0 auto;
+   padding: 0.05rem;
 }
 
 .ticket__type {
@@ -184,7 +196,7 @@ currentSituation
    font-weight: 700;
    letter-spacing: 0.02em;
    color: var(--primary-green);
-   text-align: left;
+   text-align: center;
 } 
 
 .ticket__type-modifire {
@@ -192,7 +204,7 @@ currentSituation
    font-weight: 700;
    letter-spacing: 0.01em;
    color: var(--primary-green); 
-   text-align: left;
+   text-align: center;
 }
 
 .ticket__typeSub-modifiers {
@@ -280,6 +292,7 @@ currentSituation
 NexaHUBinformation
 ========================== */
 .section__NexaHUBinformation {
+   width: 100vw;
    background-color: var(--primary-lightgreen);
    text-align: left;
    justify-content: center;
