@@ -8,50 +8,59 @@ common
    --primary-green:#1A9B44;
    --primary-black:#333a3a;
    --primary-white:#fdfdfd;
-   --primary-lightgreen: #DAF8D3;
-
+   --primary-lightgreen:#DAF8D3;
    --contentWidth: 91.4%;
    --contentpadding: 4.2%;
 }
+
+/* いい感じのボックスシャドウ
+box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4); */
 
 html {
    font-size: 62.5%;
 }
 
 body {
+   width: 100%;
    font-family: 
       'noto Sans JP',
       Arial, 
       sans-serif;
    font-style: normal;
    color: var(--primary-black,#333a3a);
-   background-color: var(--primary-white,#fdfdfd);
    line-height: 1.5;
-   /* font-size: 16px; */
+   background: var(--primary-lightGray);
+}
+
+.container {
+   width: 100%;
+   padding: 0 1rem;
 }
 
 .header {
-   width: 351px;
-   height: 120px;
-   background-color: var(--primary-lightgreen);
+   padding: 6rem 0;
+   width: 100vw;
+   height: 10vh;
+   background-color: var(--primary-white);
    box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
    position: relative;
 }
 
+
 .NexaHUBiconWrap {
    display: flex;
-   height: 100%;
-   align-items: center;
+   justify-content: space-between;
+   padding: 0 2rem;
+}
+
+.burger {
+   position: relative;
+   z-index: 10000;
 }
 
 .NexaHUBicon {
-   width: 150px;
-   height: 26px;
-   display: block;
-   margin: 0 auto;
-   justify-content: center;  
-   margin-right: 50px;
-   margin-top: 50px;
+   width: 22.1rem;
+   height: 100%;
 }
 
 .menuListWrap {
@@ -59,8 +68,8 @@ body {
 }
 
 .menuIconeRobot {
-   width: 19px;
-   height: 19px;
+   width: 1.2rem;
+   height: 1.2rem;
    margin-bottom: 7px;
    margin-right: 7px;
 }
@@ -69,18 +78,8 @@ body {
    color: var(--primary-black);
    font-size: 1.8rem;
    font-weight: 400;
-   margin-top: 25px;
+   margin-top: 4rem;
 }
-
-/* ページ全体は固定 */
-body{
-  margin:0;
-  background:#eaeaea;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
 /* =======================
 event
 ========================== */
