@@ -71,84 +71,82 @@
 
 <body>
 <section class="section__login">
-   <h3 class="login">LOGIN / REGISTRATION</h3>
-   <h2 class="login--ja">ログイン / 新規会員登録</h2>
-   <p class="login--bk">会員ログイン</p>
-
-<!-- /* =======================
-godY
-========================== */ -->
-  <form action="">
-
-
-    <!-- inputタグ注意点
-     ※ 項目によってtype属性を変えること
-     名前の項目ならテキスト入力だから　→　type="text"
-     メールアドレスの項目なら　→　type="email"
-     電話な項目なら　→　type="number"
-     などなど...
-
-     ※ 項目によってname属性を変えること
-     これは何のデータをもらうための要素かわかるような名前をつけて
-     名前の項目なら → name="yourname"
-     ご意見またはご質問の項目なら → name="opinions"
-     などなど...
-
-     ※ 初期値をグレー文字で出したいなら
-     placeholder="出したいテキスト"
-    -->
-
-    <!-- inputタグ（メールアドレス） -->
-    <div class="form__item">
-      <p class="form__item__label">メールアドレス</p>
-      <input type="email" name="yourEmail" placeholder="xxx@example.com" />
-    </div>
-
-   <div class="form__item">
-   <p class="form__item__label">パスワード</p>
-   <input type="password" id="pass" name="password" minlength="8" required />
-</div>
-<a href="reserve.html" class="loginBtn">ログインする</a>
-<div class="registration">
-   <p class="registration__title">会員登録がお済みでないお客様</p>
-   <p class="registration__txt">会員登録がお済みでないお客様は、<br>こちらから新規会員登録へお進みください。</p>
-<a href="#" class="newLoginBtn">新規会員登録</a>
+   <div class="container">
+      <h3 class="login">LOGIN / REGISTRATION</h3>
+      <h2 class="login--ja">ログイン / 新規会員登録</h2>
+      <p class="login--bk">会員ログイン</p>
+      
+      <!-- /* =======================
+      godY
+      ========================== */ -->
+        <form action="">
+       <!-- inputタグ注意点
+        ※ 項目によってtype属性を変えること
+        名前の項目ならテキスト入力だから　→　type="text"
+        メールアドレスの項目なら　→　type="email"
+        電話な項目なら　→　type="number"
+        などなど...
+        ※ 項目によってname属性を変えること
+        これは何のデータをもらうための要素かわかるような名前をつけて
+        名前の項目なら → name="yourname"
+        ご意見またはご質問の項目なら → name="opinions"
+        などなど...
+        ※ 初期値をグレー文字で出したいなら
+        placeholder="出したいテキスト"
+       -->
+       <!-- inputタグ（メールアドレス） -->
+       <div class="form__item">
+         <p class="form__item__label">メールアドレス</p>
+         <input type="email" name="yourEmail" placeholder="xxx@example.com" />
+       </div>
+      <div class="form__item">
+      <p class="form__item__label">パスワード</p>
+      <input type="password" id="pass" name="password" minlength="8" required />
+      </div>
+      <a href="reserve.html" class="loginBtn">ログインする</a>
+      <div class="registration">
+      <p class="registration__title">会員登録がお済みでないお客様</p>
+      <p class="registration__txt">会員登録がお済みでないお客様は、<br>こちらから新規会員登録へお進みください。</p>
+      <a href="#" class="newLoginBtn">新規会員登録</a>
+   </div>
 </div>
 </section>
 
   <!-- NexaHUBinformation -->
 <footer class="section__NexaHUBinformation">
-      <div class="NexaHUBinformation__block">
-         <h3 class="NexaHUBinformation__title">OPEN-CLOSE<span class="NexaHUBinformation__subTitle">営業時間</span></h3>
-         <p class="NexaHUBinformation__txt">平日&emsp;9:00-21:00</p>
-         <p class="NexaHUBinformation__txt">土日祝&emsp;8:00-21:00</p>
+      <div class="container">
+         <div class="NexaHUBinformation__block">
+            <h3 class="NexaHUBinformation__title">OPEN-CLOSE<span class="NexaHUBinformation__subTitle">営業時間</span></h3>
+            <p class="NexaHUBinformation__txt">平日&emsp;9:00-21:00</p>
+            <p class="NexaHUBinformation__txt">土日祝&emsp;8:00-21:00</p>
+         </div>
+         <div class="NexaHUBinformation__block">
+            <h3 class="NexaHUBinformation__title">TEL<span class="NexaHUBinformation__subTitle">電話番号</span></h3>
+            <p class="NexaHUBinformation__txt">078-xxx-xxxx</p>
+         </div>
+         <div class="NexaHUBinformation__block">
+            <h3 class="NexaHUBinformation__title">ADDRESS<span class="NexaHUBinformation__subTitle">所在地</span></h3>
+            <p class="NexaHUBinformation__txt">〒650-0046</p>
+            <p class="NexaHUBinformation__txt1">兵庫県神戸市中央区港島中町8-x-x</p>
+         </div>
+            <p class="NexaHUBinformation__txtSns">Follow Us!</p>
+            <div class="SNSblock">
+         <img class="sns" src="images/X.svg"></img>
+         <img class="sns" src="images/instagram.svg"></img>
+         <img class="sns" src="images/Line.svg"></img>
+         <img class="sns" src="images/youtube.svg"></img>
+         <img class="sns" src="images/facebook.svg"></img>
+         <img class="sns" src="images/TikTok.svg"></img>
+            </div>
+         <div class="copyrightArea">
+            <div class="footerLine"></div>
+            <div class="footer">
+         <img src="images/NexaHUBicon.png" alt="" class="NexaHUBiconFooter">
+         </div>
+            <p class="copyright">&copy; 2026 NexaHUB Inc.</p>
+            </div>
+         </div>
       </div>
-      <div class="NexaHUBinformation__block">
-         <h3 class="NexaHUBinformation__title">TEL<span class="NexaHUBinformation__subTitle">電話番号</span></h3>
-         <p class="NexaHUBinformation__txt">078-xxx-xxxx</p>
-      </div>
-      <div class="NexaHUBinformation__block">
-         <h3 class="NexaHUBinformation__title">ADDRESS<span class="NexaHUBinformation__subTitle">所在地</span></h3>
-         <p class="NexaHUBinformation__txt">〒650-0046</p>
-         <p class="NexaHUBinformation__txt1">兵庫県神戸市中央区港島中町8-x-x</p>
-      </div>
-         <p class="NexaHUBinformation__txtSns">Follow Us!</p>
-   <div class="SNSblock">
-      <img class="sns" src="images/X.svg"></img>
-      <img class="sns" src="images/instagram.svg"></img>
-      <img class="sns" src="images/Line.svg"></img>
-      <img class="sns" src="images/youtube.svg"></img>
-      <img class="sns" src="images/facebook.svg"></img>
-      <img class="sns" src="images/TikTok.svg"></img>
-   </div>
-<div class="copyrightArea">
-   <div class="footerLine"></div>
-   <div class="footer">
-      <img src="images/NexaHUBicon.png" alt="" class="NexaHUBiconFooter">
-</div>
-   <p class="copyright">&copy; 2026 NexaHUB Inc.</p>
-   </div>
-</div>
 </footer>
 
 <!-- 入力フォームのjs -->
