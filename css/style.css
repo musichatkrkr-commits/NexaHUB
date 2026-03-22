@@ -1,92 +1,6 @@
 @charset "utf-8";
 
 /* =======================
-common
-========================== */
-:root {
-   --primary-lightGray:#eee;
-   --primary-green:#1A9B44;
-   --primary-black:#333a3a;
-   --primary-white:#fdfdfd;
-   --primary-lightgreen:#DAF8D3;
-   --contentWidth: 91.4%;
-   --contentpadding: 4.2%;
-}
-
-/* いい感じのボックスシャドウ
-box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4); */
-
-html {
-   font-size: 62.5%;
-}
-
-* {
-   border: 1px solid red;
-}
-
-body {
-   width: 100%;
-   font-family: 
-      'noto Sans JP',
-      Arial, 
-      sans-serif;
-   font-style: normal;
-   color: var(--primary-black,#333a3a);
-   line-height: 1.5;
-   background: var(--primary-lightGray);
-}
-
-.container {
-   width: 100%;
-   padding: 0 1rem;
-}
-
-.header {
-   padding: 2rem 0;
-   width: 100vw;
-   height: 8.4rem;
-   background-color: var(--primary-white);
-   box-shadow: 0px 5px 5px 0px rgba(144, 144, 144, 0.4);
-   position: sticky;
-   top: 0;
-   z-index: 4;
-}
-
-.NexaHUBiconWrap {
-   display: flex;
-   justify-content: space-between;
-   padding: 0 2rem;
-}
-
-.burger {
-   position: relative;
-}
-
-.NexaHUBicon {
-   width: 22.1rem;
-   height: 3.9rem;
-}
-
-.menuListWrap {
-   padding: 20px;
-}
-
-.menuIconeRobot {
-   width: 1.2rem;
-   height: 1.2rem;
-   margin-bottom: 7px;
-   margin-right: 7px;
-}
-
-.menuList {
-   color: var(--primary-black);
-   font-size: 1.8rem;
-   font-weight: 400;
-   margin-top: 2rem;
-}
-
-
-/* =======================
 mainvisual
 ========================== */
 .mainImg__wrapper {
@@ -168,7 +82,7 @@ introduction
 .introduction {
    justify-content: center;
    display: flex;
-   gap: 10px;
+   gap: 1rem;
 }
 
 .introduction--green {
@@ -177,7 +91,7 @@ introduction
    font-weight: 700;
    color: var(--primary-green);
    align-items: flex-end;
-   margin-top: 40px;
+   margin-top: 4rem;
 }
 
 .introduction--ja {
@@ -187,11 +101,36 @@ introduction
    text-align: center;
 }
 
+.slider {
+   width: 100%;
+   overflow: hidden;
+}
+
+.slider-track {
+   display: flex;
+   flex-direction: column;
+}
+
+.introduction {
+   display: flex;
+   flex-wrap: nowrap;
+   gap: 1rem;
+}
+
+.slide {
+   position: relative;
+   flex-shrink: 0;
+   width: 10rem;
+   overflow: hidden;
+}
+
 .introduction__image {
-   margin-top: 20px;
-   width: 100px;
-   height: 100px;
-   border-radius: 10px;
+   margin-top: 2rem;
+   width: 100%0;
+   height: 10rem;
+   border-radius: 1rem;
+   object-fit: cover;
+   display: block;
    background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
@@ -203,9 +142,9 @@ introduction
    color: var(--primary-white);
    background-color: var(--primary-black);
    opacity: 0.8;
-   padding: 5px 10px;
-   border-radius: 10px;
-   margin-top: 10px;
+   padding: 0.5rem 1rem;
+   border-radius: 1rem;
+   margin-top: 1rem;
    position: absolute;
    bottom: 5%;
    left: 5%;
@@ -214,10 +153,10 @@ introduction
 }
 
 .introductionBtn__wrap {
-   gap: 10px;
+   gap: 1rem;
    margin: 0 auto;
-   margin-top: 30px;
-   margin-bottom: 40px;
+   margin-top: 3rem;
+   margin-bottom: 4rem;
    justify-content: center;
    display: flex;
 }
@@ -228,16 +167,14 @@ introduction
    letter-spacing: 0.1em;
    color: var(--primary-white);
    background-color: var(--primary-green);
-   padding: 10px 10px;
-   border-radius: 10px;
+   padding: 1rem 1rem;
+   border-radius: 1rem;
    box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5)
 }
 
 /* =======================
 icon
 ========================== */
-
-
 .fa-solid.fa-heart {
    font-size: 1.4rem;
 }
@@ -265,7 +202,7 @@ icon
    display: flex;
   width: max-content;        /* ← 内容サイズにする */
    animation: scroll 60s linear infinite;
-   margin-bottom: 20px;
+   margin-bottom: 2rem;
 }
 
 /* カード */
@@ -280,7 +217,7 @@ icon
 /* 画像 */
 .introduction__image {
   width: 100%;
-  height: 180px;
+  height: 18rem;
   object-fit: cover;
   display: block;
 }
@@ -302,13 +239,13 @@ icon
   background: rgba(0,0,0,0.5);
   color: #fff;
   border: none;
-  font-size: 22px;
-  padding: 8px 12px;
+  font-size: 2.2rem;
+  padding: 0.8rem 1.2rem;
   cursor: pointer;
 }
 
-.prev { left: 15px; }
-.next { right: 15px; }
+.prev { left: 1.5rem; }
+.next { right: 1.5rem; }
 
 /* =======================
 map
@@ -316,7 +253,7 @@ map
 .section__map {
    width: 100%;
    background-color: var(--primary-white);
-   padding: 40px 0;
+   padding: 4rem 0;
 }
 
 .map__title {
@@ -342,8 +279,8 @@ map
    justify-content: center;
    font-size: 2.4rem;
    font-weight: 700;
-   gap: 50px;
-   margin-top: 30px;
+   gap: 5rem;
+   margin-top: 3rem;
 }
 
 .f2,.f3 {
@@ -353,15 +290,15 @@ map
 .mapImg {
    display: flex;
    justify-content: center;
-   margin-top: 20px;
+   margin-top: 2rem;
 }
 
 .mapImg__1f {
    background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
-   width: 320px;
-   margin-bottom: 30px;
+   width: 32rem;
+   margin-bottom: 3rem;
 }
 
 .detailLook {
@@ -371,30 +308,29 @@ map
 
 .map__description {
    width: 100%; 
-   max-width: 317px;
    border-radius: 10px;
-   border: solid 2px var(--primary-lightGray);
+   border: solid 0.2rem var(--primary-lightGray);
    margin: 0 auto;
-   margin-top: 15px;
+   margin-top: 1.5rem;
 }
 .mapIconInner{
    display: flex;
+   justify-content: center;
 }
 .map__description--under {
    width: 100%; 
-   max-width: 317px;
-   border-radius: 10px;
-   border: solid 2px var(--primary-lightGray);
+   border-radius: 1rem;
+   border: solid 0.2rem var(--primary-lightGray);
    margin: 0 auto;
-   margin-top: 10px;
-   margin-bottom: 20px;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
 }
 
 .mapBtnWrap {
    display: flex;
-   gap: 5px;
+   gap: 0.5rem;
    justify-content: center;
-   padding: 10px 0;
+   padding: 1rem 0;
 }
 
 .reviewLook,.waitTimelook {
@@ -403,34 +339,34 @@ map
    font-weight: 500;
    letter-spacing: 0.05em;
    background-color: var(--primary-green);
-   border-radius: 10px;
+   border-radius: 1rem;
    box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
    align-items: center;
    justify-content: center;
    white-space: nowrap;
-   padding: 5px 12px;
+   padding: 0.5rem 1.2rem;
 }
 
 .mapImg__VR {
-   width: 105px;
-   height: 105px;
-   border-radius: 10px;
-   margin-top: 13px;
-   margin-left: 10px;
+   width: 10.5rem;
+   height: 10.5rem;
+   border-radius: 1rem;
+   margin-top: 1.3rem;
+   margin-left: 1rem;
    object-fit: cover;
 }
 
 .mapImg__robot {
-   width: 105px;
-   height: 105px;
-   border-radius: 10px;
-   margin-top: 13px;
-   margin-left: 10px;
+   width: 10.5rem;
+   height: 10.5rem;
+   border-radius: 1rem;
+   margin-top: 1.3rem;
+   margin-left: 1rem;
 }
 
 .mapSquare {
-   margin-top: 13px;
-   margin-left: 10px;
+   margin-top: 1.3rem;
+   margin-left: 1rem;
 }
 
 
@@ -452,104 +388,4 @@ map
 .map__txt2small {
    font-size: 1.2rem;
    color: var(--primary-black);
-}
-
-/* =======================
-NexaHUBinformation
-========================== */
-.section__NexaHUBinformation {
-   width: 100%;
-   background-color: var(--primary-lightgreen);
-   text-align: left;
-   justify-content: center;
-   padding-top: 40px;
-}
-
-.NexaHUBinformation__title {
-   font-size: 1.2rem;
-   color: var(--primary-green);
-   font-weight: 500;
-   padding-left: 40px;
-}
-
-.NexaHUBinformation__block {
-   margin-bottom: 20px;
-}
-
-.NexaHUBinformation__subTitle {
-   font-size: 1.2rem;
-   color: var(--primary-green);
-   font-weight: 400;
-   padding-left: 40px;
-}
-
-.NexaHUBinformation__txt {
-   font-size: 1.2rem;
-   color: var(--primary-black);
-   font-weight: 400;
-   padding-left: 40px;
-}
-
-.NexaHUBinformation__txt1 {
-   font-size: 1.2rem;
-   color: var(--primary-black);
-   font-weight: 400;
-   padding-left: 40px;
-}
-
-.NexaHUBinformation__txtSns {
-   font-size: 1.2rem;
-   color: var(--primary-green);
-   font-weight: 500;
-   padding-left: 40px;
-}
-
-.SNSblock {
-   display: flex;
-   justify-content: left;
-   gap: 10px;
-   animation: SNSblock 2s ease-out infinite;
-   opacity: 1;
-   padding-left: 40px;
-}
-
-@keyframes SNSblock {
-   0%, 40%, 60%, 80% {
-   transform: scale(1.0);
-}
-
-50%, 70% {
-   transform: scale(0.95);
-   }
-}
-
-.sns {
-   width: 20px;
-   height: 20px;
-   margin: 10px 0 40px;
-}
-
-.copyrightArea {
-   margin: 0 auto;
-}
-
-.footerLine {
-   border-top: #a9a9a9 0.1px solid;
-   margin-bottom: 15px;
-}
-
-.NexaHUBiconFooter {
-   background-color: var(--primary-lightgreen);
-   width: 110px;
-   height: 19px;
-   display: block;
-   margin: 0 auto;
-}
-
-.copyright {
-   font-size: 10px;
-   color: var(--primary-black);
-   text-align: center;
-   margin-top: 3px;
-   padding-bottom: 10px;
 }
