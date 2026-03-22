@@ -8,6 +8,9 @@ godY
    <h3 class="login">LOGIN / REGISTRATION</h3>
    <h2 class="login--ja">ログイン / 新規会員登録</h2>
    <p class="login--bk">会員ログイン</p> */
+.section__login {
+   width: 100vw;
+}
 
 .login {
    font-size: 2.4rem;
@@ -29,6 +32,7 @@ godY
    letter-spacing: 0.05em;
    text-align: left;
    color: var(--primary-black);
+   padding-left: 2rem;
 }
 
 .form {

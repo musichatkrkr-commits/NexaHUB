@@ -4,8 +4,9 @@
 map
 ========================== */
 .section__map {
+   width: 100vw;
    background-color: var(--primary-white);
-   padding: 40px 0;
+   padding: 4rem 0;
 }
 
 .map__title {
@@ -32,8 +33,8 @@ map
    justify-content: center;
    font-size: 2.4rem;
    font-weight: 700;
-   gap: 50px;
-   margin-top: 30px;
+   gap: 5rem;
+   margin-top: 3rem;
 }
 
 .f2,.f1 {
@@ -43,15 +44,15 @@ map
 .mapImg {
    display: flex;
    justify-content: center;
-   margin-top: 20px;
+   margin-top: 2rem;
 }
 
 .mapImg__1f {
    background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
-   width: 320px;
-   margin-bottom: 30px;
+   width: 32rem;
+   margin-bottom: 3rem;
 }
 
 .detailLook {
@@ -61,30 +62,29 @@ map
 
 .map__description {
    width: 100%; 
-   max-width: 317px;
-   border-radius: 10px;
+   border-radius: 1rem;
    border: solid 2px var(--primary-lightGray);
    margin: 0 auto;
-   margin-top: 15px;
+   margin-top: 1.5rem;
 }
 .mapIconInner{
    display: flex;
+   width: 100%;
 }
 .map__description--under {
    width: 100%; 
-   max-width: 317px;
-   border-radius: 10px;
+   border-radius: 1rem;
    border: solid 2px var(--primary-lightGray);
    margin: 0 auto;
-   margin-top: 10px;
-   margin-bottom: 20px;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
 }
 
 .mapBtnWrap {
    display: flex;
-   gap: 5px;
+   gap: 1rem;
    justify-content: center;
-   padding: 10px 0;
+   padding: 1rem 0;
 }
 
 .reviewLook,.waitTimelook {
@@ -93,17 +93,17 @@ map
    font-weight: 500;
    letter-spacing: 0.05em;
    background-color: var(--primary-green);
-   border-radius: 10px;
+   border-radius: 1rem;
    box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
    align-items: center;
    justify-content: center;
    white-space: nowrap;
-   padding: 5px 12px;
+   padding: 0.5rem 1.2rem;
 }
 
 .mapImg__VR {
-   width: 105px;
-   height: 105px;
+   width: 10.5rem;
+   height: 10.5rem;
    border-radius: 10px;
    margin-top: 13px;
    margin-left: 10px;
@@ -111,8 +111,8 @@ map
 }
 
 .mapImg__robot {
-   width: 105px;
-   height: 105px;
+   width: 10.5rem;
+   height: 10.5rem;
    border-radius: 10px;
    margin-top: 13px;
    margin-left: 10px;
