@@ -17,6 +17,7 @@ godY
    font-weight: 700;
    color: var(--primary-green);
    text-align: center;
+   margin-top: 4rem;
 }
 
 .login--ja {
@@ -27,12 +28,17 @@ godY
 }
 
 .login--bk {
-   font-size: 1.6rem;
+   font-size: 2rem;
    font-weight: 600;
    letter-spacing: 0.05em;
    text-align: left;
    color: var(--primary-black);
    padding-left: 2rem;
+   margin: 4rem 0 2rem 0;
+}
+
+.input {
+   width: 90%;
 }
 
 .form {
@@ -70,11 +76,11 @@ godY
    font-size: 1.6rem;
    font-weight: 500;
    letter-spacing: 0.1em;
+   text-align: center;
    color: var(--primary-white);
    background-color: var(--primary-green);
-   width: 31.1rem;
-   padding: 0.5rem 0;
-   text-align: center;
+   width: 20rem;
+   padding: 0.5rem 1rem;
    display: block;
    margin: 0 auto;
    margin-top: 1.2rem;
@@ -83,7 +89,7 @@ godY
 }
 
 .registration {
-   margin-top: 6rem;
+   margin-top: 8rem;
    text-align: center;
 }
 
@@ -109,10 +115,10 @@ godY
    background-color: var(--primary-green);
    width: 31.1rem;
    padding: 1.5rem 0;
-   text-align: center;
    display: block;
    margin: 0 auto;
    margin-top: 1.6rem;
    border-radius: 1rem;
    box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5);
+   margin-bottom: 6rem;
 }

@@ -8,6 +8,7 @@ event
    padding: 4rem 0 1rem 0;
    overflow: hidden;
    display: block;
+   width: 100vw;
 }
 
 .section__event-modifiers {
@@ -15,6 +16,10 @@ event
    padding: 6rem 0 1rem 0;
    overflow: hidden;
    display: block;
+}
+
+.container {
+   width: 90%;
 }
 
 .needReserve {
@@ -46,6 +51,9 @@ event
 }
 
 .event__event {
+   display: block;
+   width: 90%;
+   margin: 0 auto;
    text-align: center;
 }
 
@@ -141,4 +149,5 @@ event
    padding: 0.5rem 1rem;
    border-radius: 1rem;
    box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.4);
+   justify-content: center;
 }

@@ -4,46 +4,47 @@
 reserve
 ========================== */
 .section__reserve {
-   background-color: var(--primary-white);
-   padding: 40px 0 60px;
+  width: 100vw;
+  background-color: var(--primary-white);
+  padding: 40px 0 60px;
 }
 
 .reserve--gr {
-   font-size: 2.4rem;
-   font-weight: 700;
-   color: var(--primary-green);
-   text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  text-align: center;
 }
 
 .reserve--ja {
-   font-size: 1.2rem;
-   font-weight: 400;
-   color: var(--primary-green);
-   text-align: center;
-   margin-bottom: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary-green);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .reserve__btnListTxt {
-   font-size: 1.6rem;
-   color: var(--primary-white);
-   font-weight: 700;
-   text-align: center;
-   line-height: 1.2;
+  font-size: 1.6rem;
+  color: var(--primary-white);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .reserve__span {
-   font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 /* =======================
 godY
 ========================== */
 .reserveArea {
-   width: 317px;
-   margin: 0 auto;
-   border-radius: 10px;
-   border: var(--primary-lightGray) solid 3px;
-   padding-bottom: 40px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: var(--primary-lightGray) solid 3px;
+  padding-bottom: 40px;
 }
 
       .form__item {
@@ -102,17 +103,17 @@ godY
       }
 
 .done {
-   font-size: 1.4rem;
-   font-weight: 500;
-   letter-spacing: 0.1em;
-   color: var(--primary-white);
-   background-color: var(--primary-green);
-   width: 271px;
-   padding: 5px 0;
-   text-align: center;
-   display: block;
-   margin: 0 auto;
-   border-radius: 10px;
-   margin-top: 40px;
-   box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--primary-white);
+  background-color: var(--primary-green);
+  width: 271px;
+  padding: 5px 0;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 2px 5px 8px rgba(144, 144, 144, 0.5);
 }

@@ -25,10 +25,10 @@ ticket/pass
 }
 
 .ticket__box {
+   width: 100%;
    display: flex;
    flex-direction: column;
-   text-align: center;
-   
+   align-items: center;   
 }
 
 .ticketPass__title {
@@ -39,19 +39,20 @@ ticket/pass
    background-color: var(--primary-lightgreen);
    width: 31.7rem;
    margin: 0 auto;
+   text-align: center;
    border-radius: 1rem;
    padding: 1rem 0;
    margin-top: 4rem;
 }
 
 .general {
-   width: 100%;  
+   width: 90%;  
    height: auto; 
    border-radius: 1rem;
    display: flex;
-   justify-content: center;
-   margin-top: 1rem;
-   padding: 1rem;
+   /* justify-content: center; */
+   /* padding-left: 1rem 0 0 0; */
+   margin: 1rem 1.6rem 0 1.6rem;
    background-color: var(--primary-white);
    gap: 1.5rem;
 }
@@ -61,6 +62,7 @@ ticket/pass
    height: 7.3rem;
    border-radius: 1rem;
    overflow: hidden;
+   margin: 1rem;
 }
 
 .icone__box-modifire {
@@ -69,6 +71,7 @@ ticket/pass
    border-radius: 1rem;
    overflow: hidden;
    border: var(--primary-lightGray) 2px solid;
+   margin: 1rem;
 }
 
 .icone__contents {

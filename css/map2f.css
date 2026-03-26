@@ -51,7 +51,7 @@ map
    background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
-   width: 32rem;
+   width: 80%;
    margin-bottom: 3rem;
 }
 
@@ -60,9 +60,12 @@ map
    justify-content: center;
 }
 
+.ul {
+   
+}
+
 .map__description {
-   width: 100%; 
-   max-width: 375px;
+   width: 90%; 
    border-radius: 1rem;
    border: solid 2px var(--primary-lightGray);
    display: block;
@@ -75,8 +78,7 @@ map
 }
 
 .map__description--under {
-   width: 100%; 
-   max-width: 375px;
+   width: 90%; 
    border-radius: 1rem;
    border: solid 2px var(--primary-lightGray);
    display: block;

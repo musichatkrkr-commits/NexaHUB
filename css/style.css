@@ -3,6 +3,10 @@
 /* =======================
 mainvisual
 ========================== */
+.header {
+   background-color: var(--primary-white);
+}
+
 .mainImg__wrapper {
    width: 100%;
    position: relative;
