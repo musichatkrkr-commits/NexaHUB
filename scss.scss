@@ -1,5 +1,5 @@
 .burger {
-  --opacity: 1;
+  --opacity: 0;
   --rotate: 0;
   --translate: .5rem;
   display: grid;
@@ -10,7 +10,7 @@
   background-color: transparent;
   cursor: pointer;
   &:hover {
-    background-color: #eee;
+    background-color: ;
   }
   &.is-active {
     --opacity: 0;
