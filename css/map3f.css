@@ -67,10 +67,12 @@ map
    margin: 0 auto;
    margin-top: 1.5rem;
 }
+
 .mapIconInner{
    display: flex;
    width: 100%;
 }
+
 .map__description--under {
    width: 90%; 
    border-radius: 1rem;
