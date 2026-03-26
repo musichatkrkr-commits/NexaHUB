@@ -47,7 +47,7 @@ body {
 header
 ========================== */
 .header {
-   padding: 2rem 0;
+   padding: 2rem;
    width: 100vw;
    height: 8.4rem;
    background-color: var(--primary-lightgreen);
@@ -61,7 +61,7 @@ header
    width: 100vw;
    display: flex;
    justify-content: space-between;
-   padding: 0 2rem;
+   padding: 0 6rem 0 2rem;
 }
 
 .burger {
