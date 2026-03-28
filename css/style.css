@@ -255,7 +255,7 @@ icon
 map
 ========================== */
 .section__map {
-   width: 100%;
+   width: 100vw;
    background-color: var(--primary-white);
    padding: 4rem 0;
 }
@@ -301,7 +301,7 @@ map
    background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
-   width: 32rem;
+   width: 80%;
    margin-bottom: 3rem;
 }
 
@@ -311,8 +311,8 @@ map
 }
 
 .map__description {
-   width: 100%; 
-   border-radius: 10px;
+   width: 90%; 
+   border-radius: 1rem;
    border: solid 0.2rem var(--primary-lightGray);
    margin: 0 auto;
    margin-top: 1.5rem;
@@ -322,7 +322,7 @@ map
    justify-content: center;
 }
 .map__description--under {
-   width: 100%; 
+   width: 90%; 
    border-radius: 1rem;
    border: solid 0.2rem var(--primary-lightGray);
    margin: 0 auto;
